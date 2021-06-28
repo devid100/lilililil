@@ -699,7 +699,7 @@ end
 function Addmp3(msg,chat,kkl,ffrr)
 local eer = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..kkl)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..eer.result.file_path,ffrr) 
-sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼 𝐋𝐎𝐆𝐀𝐍")  
+sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼 ¹𝐀𝐕𝐈𝐑𝐀¹")  
 os.execute('rm -rf ./'..ffrr) 
 end
 function Addsticker(msg,chat,Sd,rre)
@@ -1727,7 +1727,7 @@ send(msg.chat_id_, msg.id_,'['..t..']')
 end,nil) 
 end 
 end
------------------------------------------------𝐋𝐎𝐆𝐀𝐍---------------------------------------------------------------
+-----------------------------------------------¹𝐀𝐕𝐈𝐑𝐀¹---------------------------------------------------------------
 if msg.content_.photo_ then  
 if database:get(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) then 
 if msg.content_.photo_.sizes_[3] then  
@@ -1750,7 +1750,7 @@ end, nil)
 database:del(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) 
 end   
 end
------------------------------------------------𝐋𝐎𝐆𝐀𝐍---------------------------------------------------------------
+-----------------------------------------------¹𝐀𝐕𝐈𝐑𝐀¹---------------------------------------------------------------
 if database:get(bot_id.."Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_," ◉ تم الغاء وضع الوصف")
@@ -1762,7 +1762,7 @@ https.request('https://api.telegram.org/bot'..token..'/setChatDescription?chat_i
 send(msg.chat_id_, msg.id_,' ◉ تم تغيير وصف الجروب')
 return false  
 end 
------------------------------------------------𝐋𝐎𝐆𝐀𝐍---------------------------------------------------------------
+-----------------------------------------------¹𝐀𝐕𝐈𝐑𝐀¹---------------------------------------------------------------
 if database:get(bot_id.."Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_," ◉ تم الغاء حفظ الترحيب")
@@ -2779,20 +2779,20 @@ end
 if text == 'هارفي' or text == 'عبدلله' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
- المبرمج ديناميت 
+ المبرمج هارفي 
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '  𓌹 ˹ديناميت¹˼ 𓌺 ',url="t.me/UU_DEN"}},}
+keyboard.inline_keyboard = {{{text = '  𓌹 ˹ＨＡＲＶＥＹ¹˼ 𓌺 ',url="t.me/hr_ba_1"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/hr_ba_1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'حمو' or text == "تلشاني" then
+if text == 'دونجول' or text == "دونجل" then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
- المبرمج حمو
+ المبرمج دونجول
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '  𓌹 ˹حمو تلشاني¹˼ 𓌺 ',url="t.me/UU_PAB"}},}
+keyboard.inline_keyboard = {{{text = '  𓌹 ˹ＤＯＮＧＯＬ¹˼ 𓌺 ',url="t.me/UU_DO_N"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_DO_N&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
@@ -2806,7 +2806,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_PAB"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_DEN"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/de_vi_d"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_DO_N"}},
 {{text = '  ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌 ', url="t.me/Lo_ga_n1"}},
 {{text = '   ²₀²₁ ˝₀₄˝₁₃ | ₁₂:₀₀ 𝙿𝙼  ', url="t.me/Lo_ga_n1"}},
 }https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Lo_ga_n1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9161,7 +9161,7 @@ local text =
 ' }\n'..' ◉  الايدي ← { '..idgp..
 ' }\n'..' ◉  الايدي بالصوره ← { '..idph..
 ' }\n'..' ◉  الرفع ← { '..setadd..
-' }\n'..' ◉  الحظر ← { '..banm..' }\n\n⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺\n ◉ قناة سورس لوجان ↓\n [ 𝐋𝐎𝐆𝐀𝐍](t.me/Lo_ga_n1) \n'
+' }\n'..' ◉  الحظر ← { '..banm..' }\n\n⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺\n ◉ قناة سورس لوجان ↓\n [ ¹𝐀𝐕𝐈𝐑𝐀¹](t.me/Lo_ga_n1) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -10876,7 +10876,7 @@ if audios.Info == true then
 local Text ='◉تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐋𝐎𝐆𝐀𝐍.',url="t.me/Lo_ga_n1"}},
+{{text = '¹𝐀𝐕𝐈𝐑𝐀¹.',url="t.me/Lo_ga_n1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -13860,7 +13860,7 @@ end
 local Text =[[
 اتبع الازرار تحت ⇣
 واستمتع للأوامر 🕹️
-◉[𝐋𝐎𝐆𝐀𝐍 ](t.me/Lo_ga_n1)◉
+◉[¹𝐀𝐕𝐈𝐑𝐀¹ ](t.me/Lo_ga_n1)◉
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13900,7 +13900,7 @@ local Text =[[
  ◉ مرحب بيك في الالعاب ◉ 
  اتبع الازرار إلى تحت في الاسفل ↓
 ⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺
-[ 𝐋𝐎𝐆𝐀𝐍 ](t.me/Lo_ga_n1)
+[ ¹𝐀𝐕𝐈𝐑𝐀¹ ](t.me/Lo_ga_n1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13917,7 +13917,7 @@ keyboard.inline_keyboard = {
 {text = 'الاوامر🎯', callback_data="/help90"},
 },
 {
-{text = ' 𝚂𝙾𝚄𝚁𝙲𝙴 ', url="t.me/Lo_ga_n1"},
+{text = ' 𝚂𝙾𝚄𝚁𝙲𝙴 𝙰𝚅𝙸𝚁𝙰', url="t.me/Lo_ga_n1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14913,7 +14913,7 @@ local Teext =[[
  ◉ مرحب بيك في الالعاب ◉ 
  اتبع الازرار إلى تحت في الاسفل ↓
 ⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺
-[ 𝐋𝐎𝐆𝐀𝐍 ](t.me/Lo_ga_n1)
+[ ¹𝐀𝐕𝐈𝐑𝐀¹ ](t.me/Lo_ga_n1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
