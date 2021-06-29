@@ -65,7 +65,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./vvvvvvInfo.lua")   
+create(config, "./lililililInfo.lua")   
 end 
 infotnseb = {}
 infotnseb.id = database:get(id_server..":SUDO:ID")
@@ -96,7 +96,7 @@ exit 1
 fi
 if [ ! $token ]; then
 echo "⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺ ⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺ ┉ ┉"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE vvvvvvInfo.lua \e[0m"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE lililililInfo.lua \e[0m"
 echo "⩹━━━━⊶❲𝐋𝐎𝐆𝐀𝐍❳⊷━━━━⩺ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
 exit 1
 fi
@@ -133,7 +133,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./vvvvvvInfo.lua", "r")  
+local f = io.open("./lililililInfo.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -141,7 +141,7 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./vvvvvvInfo.lua")() 
+local config = loadfile("./lililililInfo.lua")() 
 return config 
 end 
 _redis = load_redis()  
@@ -168,7 +168,7 @@ DDDDDDDDDDDDD      EEEEEEEEEEEEEEEEEEEEEE            VVV            IIIIIIIIIIDD
 > CH › @Lo_ga_n1
 ~> DEVELOPER › @de_vi_d 
 ]])
-sudos = dofile("./vvvvvvInfo.lua")
+sudos = dofile("./lililililInfo.lua")
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
@@ -179,7 +179,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/devid100/lilililil/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -192,7 +192,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1360140225,1896382059,1828361895,1117133398}   
+sudo_users = {SUDO,1360140225,1896382059,1828361895,1816750928}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -286,7 +286,7 @@ if tonumber(user_id) == tonumber(1360140225) then
 var = true
 elseif tonumber(user_id) == tonumber(1896382059) then
 var = true
-elseif tonumber(user_id) == tonumber(1117133398) then
+elseif tonumber(user_id) == tonumber(1816750928) then
 var = true
 elseif tonumber(user_id) == tonumber(1828361895) then
 var = true
@@ -326,7 +326,7 @@ if tonumber(user_id) == tonumber(1360140225) then
 var = ' مبـرمـج افـايـره'
 elseif tonumber(user_id) == tonumber(1896382059) then
 var = 'مبرمج السورس²'
-elseif tonumber(user_id) == tonumber(1117133398) then
+elseif tonumber(user_id) == tonumber(1816750928) then
 var = 'مـطـور الـسـورس'
 elseif tonumber(user_id) == tonumber(1828361895) then
 var = 'مطور السورس'
@@ -1118,7 +1118,7 @@ end
 
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/devid100/lilililil/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'◉ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -1205,7 +1205,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '❲'..result.first_name_..'❳',url="t.me/"..result.username_}}, 
-{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./vvvvvvInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./lililililInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end,nil)
@@ -2492,9 +2492,9 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/library')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot')
+os.execute('wget https://raw.githubusercontent.com/devid100/lilililil/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/devid100/lilililil/main/library')
+os.execute('wget https://raw.githubusercontent.com/devid100/lilililil/main/File_Bot')
 send(msg.chat_id_, msg.id_,' ◉ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -2792,7 +2792,7 @@ local Text = [[
  المبرمج حمو
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '  𓌹 ˹حمو تلشاني¹˼ 𓌺 ',url="t.me/UU_PAB"}},}
+keyboard.inline_keyboard = {{{text = '  𓌹 ˹حمو تلشاني¹˼ 𓌺 ',url="t.me/UU_BENT_DEN"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_DO_N&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
@@ -2806,7 +2806,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_PAB"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_DEN"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_BENT_DEN"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_DEN"}},
 {{text = '  ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌 ', url="t.me/Lo_ga_n1"}},
 {{text = '   ²₀²₁ ˝₀₄˝₁₃ | ₁₂:₀₀ 𝙿𝙼  ', url="t.me/Lo_ga_n1"}},
 }https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Lo_ga_n1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4452,7 +4452,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/devid100/vvvvvv/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/devid100/lilililil/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -4490,7 +4490,7 @@ t = " ◉ الملف ← "..file.."\n ◉ تم تعطيل ملف \n"
 else
 t = " ◉ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/devid100/lilililil/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -4510,7 +4510,7 @@ t = " ◉ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ◉ الملف ← "..file.."\n ◉ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/devid100/lilililil/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -9295,7 +9295,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '❲'..result.first_name_..'❳',url="t.me/"..result.username_}}, 
-{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./vvvvvvInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 𖠕' ,url="t.me/"..dofile("./lililililInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end,nil)
@@ -11650,8 +11650,8 @@ local Text = [[
  
 ]]
 
- us = dofile("./vvvvvvInfo.lua").botUserName
- agwa = dofile("./vvvvvvInfo.lua").UserName
+ us = dofile("./lililililInfo.lua").botUserName
+ agwa = dofile("./lililililInfo.lua").UserName
  agwa = agwa:gsub("%@", "")
 keyboard = {} 
 keyboard.inline_keyboard = {
